@@ -1,0 +1,6 @@
+{
+  "name": "Central de Links & Operações GD Sun",
+  "description": "Dashboard de navegação, central de links e ferramentas operacionais para monitoramento solar e usinas GD Sun.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
