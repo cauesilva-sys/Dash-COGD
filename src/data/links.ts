@@ -7,7 +7,7 @@ export const CATEGORIES: Category[] = [
     iconName: 'Zap',
     description: 'Plataformas de telemetria, centros de supervisão solar, acompanhamento de inversores, gestão de alarmes e alerta de queimadas.',
     accentColor: '#00f0ff',
-    badge: '5 Plataformas'
+    badge: '6 Plataformas'
   },
   {
     id: 'management',
@@ -54,6 +54,19 @@ export const DEFAULT_LINKS: LinkItem[] = [
     actionText: 'Acessar GD Sun',
     isExternal: true,
     tags: ['gdsun', 'gd sun', 'monitoring', 'oficial', 'usinas', 'geracao']
+  },
+  {
+    id: 'delfos-solar-monitoring',
+    title: 'Delfos Solar Monitoring Center',
+    description: 'Centro de supervisão analítico e monitoramento operacional com visão de grade das usinas solares.',
+    url: 'https://platform.delfos.energy/solar-monitoring-center?presentation=grid',
+    categoryId: 'monitoring',
+    iconName: 'Sun',
+    badge: 'Supervisão',
+    badgeColor: 'amber',
+    actionText: 'Abrir Painel Delfos',
+    isExternal: true,
+    tags: ['delfos', 'solar', 'monitoring', 'center', 'grid', 'usinas', 'telemetria', 'analise']
   },
   {
     id: 'huawei-fusionsolar',

@@ -203,7 +203,7 @@ export default function App() {
                 isDark ? 'bg-slate-900/90 border-slate-800' : 'bg-slate-50 border-slate-200'
               }`}>
                 <span className="text-[9px] text-slate-500 uppercase block font-mono-code">Monitoramento</span>
-                <span className={`text-base font-bold font-mono-code ${isDark ? 'text-emerald-400' : 'text-emerald-600'}`}>5 Nós</span>
+                <span className={`text-base font-bold font-mono-code ${isDark ? 'text-emerald-400' : 'text-emerald-600'}`}>6 Nós</span>
               </div>
               <div className={`px-3 py-2 rounded-lg text-center border transition-colors ${
                 isDark ? 'bg-slate-900/90 border-slate-800' : 'bg-slate-50 border-slate-200'
@@ -394,37 +394,42 @@ export default function App() {
                       <span className={`text-[9px] font-mono-code font-bold ${
                         isDark ? 'text-emerald-400' : 'text-emerald-600'
                       }`}>
-                        6/6 OPERACIONAIS
+                        7/7 OPERACIONAIS
                       </span>
                     </div>
 
-                    <div className="grid grid-cols-6 gap-1.5 h-7">
-                      <div className={`border rounded flex items-center justify-center text-[8.5px] font-mono-code font-semibold ${
+                    <div className="grid grid-cols-7 gap-1 h-7">
+                      <div className={`border rounded flex items-center justify-center text-[8px] font-mono-code font-semibold ${
+                        isDark ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300' : 'bg-emerald-50 border-emerald-300 text-emerald-700'
+                      }`} title="Delfos Solar Monitoring: Operacional">
+                        DELFOS
+                      </div>
+                      <div className={`border rounded flex items-center justify-center text-[8px] font-mono-code font-semibold ${
                         isDark ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300' : 'bg-emerald-50 border-emerald-300 text-emerald-700'
                       }`} title="GDR Cloud: Operacional">
                         GDR
                       </div>
-                      <div className={`border rounded flex items-center justify-center text-[8.5px] font-mono-code font-semibold ${
+                      <div className={`border rounded flex items-center justify-center text-[8px] font-mono-code font-semibold ${
                         isDark ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300' : 'bg-emerald-50 border-emerald-300 text-emerald-700'
                       }`} title="Monitoramento GD Sun: Operacional">
                         GDSUN
                       </div>
-                      <div className={`border rounded flex items-center justify-center text-[8.5px] font-mono-code font-semibold ${
+                      <div className={`border rounded flex items-center justify-center text-[8px] font-mono-code font-semibold ${
                         isDark ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300' : 'bg-emerald-50 border-emerald-300 text-emerald-700'
                       }`} title="Huawei FusionSolar: Operacional">
                         HUAWEI
                       </div>
-                      <div className={`border rounded flex items-center justify-center text-[8.5px] font-mono-code font-semibold ${
+                      <div className={`border rounded flex items-center justify-center text-[8px] font-mono-code font-semibold ${
                         isDark ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300' : 'bg-emerald-50 border-emerald-300 text-emerald-700'
                       }`} title="iSolarCloud Sungrow: Operacional">
                         ISOLAR
                       </div>
-                      <div className={`border rounded flex items-center justify-center text-[8.5px] font-mono-code font-semibold ${
+                      <div className={`border rounded flex items-center justify-center text-[8px] font-mono-code font-semibold ${
                         isDark ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300' : 'bg-emerald-50 border-emerald-300 text-emerald-700'
                       }`} title="SMAC Climatempo (Alerta de Queimadas): Operacional">
                         SMAC
                       </div>
-                      <div className={`border rounded flex items-center justify-center text-[8.5px] font-mono-code font-semibold ${
+                      <div className={`border rounded flex items-center justify-center text-[8px] font-mono-code font-semibold ${
                         isDark ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300' : 'bg-emerald-50 border-emerald-300 text-emerald-700'
                       }`} title="Sismetro Gestão de O&M: Operacional">
                         SISMETRO
@@ -552,16 +557,19 @@ export default function App() {
       <PlantAccessModal
         isOpen={activeEmbedded === 'access'}
         onClose={() => setActiveEmbedded(null)}
+        isDark={isDark}
       />
 
       <PlantRegistryModal
         isOpen={activeEmbedded === 'registry'}
         onClose={() => setActiveEmbedded(null)}
+        isDark={isDark}
       />
 
       <ShiftScheduleModal
         isOpen={activeEmbedded === 'schedule'}
         onClose={() => setActiveEmbedded(null)}
+        isDark={isDark}
       />
 
       <EditUrlModal

@@ -76,16 +76,15 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Main top bar */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
           
-          {/* Logo and Main Title: Principais Ferramentas */}
-          <div className="flex items-center gap-3 sm:gap-4">
-            {/* GD SUN official brand emblem logo */}
-            <div className={`p-1 rounded-xl transition-all ${
-              isDark ? 'bg-slate-900/80 border border-slate-800' : 'bg-slate-50 border border-slate-200'
+          {/* Main Title: Principais Ferramentas (logo image hidden per user request) */}
+          <div className="flex items-center gap-3">
+            <div className={`w-9 h-9 rounded-xl flex items-center justify-center border transition-all ${
+              isDark 
+                ? 'bg-gradient-to-br from-amber-500/20 to-cyan-500/20 border-amber-500/30 text-amber-400' 
+                : 'bg-amber-50 border-amber-300 text-amber-600 shadow-xs'
             }`}>
-              <GdSunLogo isDark={isDark} />
+              <Zap className="w-5 h-5 fill-current" />
             </div>
-
-            <div className="h-9 w-[1px] bg-slate-700/40 hidden sm:block" />
 
             <div>
               <div className="flex items-center gap-2">
@@ -102,7 +101,7 @@ export const Header: React.FC<HeaderProps> = ({
                 </span>
               </div>
 
-              {/* Required Header Title: "Principais Ferramentas" */}
+              {/* Header Title: "Principais Ferramentas" */}
               <h1 className={`text-lg sm:text-xl font-bold tracking-tight font-tech flex items-center gap-2 ${
                 isDark ? 'text-slate-100' : 'text-slate-900'
               }`}>
